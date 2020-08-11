@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        string(name: 'PARAM1', description: 'Param 1?')
+              name: 'PARAM1'
     }
     stages {
         stage('build') {
