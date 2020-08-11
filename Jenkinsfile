@@ -12,8 +12,8 @@ pipeline {
                 }        
            steps {
                 echo "Hey HEY"
-                echo "${params}"
-                sh testm.sh      
+                echo "${name}"
+                sh "testm.sh"      
             }
         }
     }
