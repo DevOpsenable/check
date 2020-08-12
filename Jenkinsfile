@@ -1,19 +1,16 @@
 pipeline {
     agent any
+    environment {
+           BRANCH_NAME = 'master'
+               }
     parameters {
-        string(name: 'PARAM1', description: 'Param 1?')
+              name: 'PARAM1'
     }
     stages {
         stage('build') {
-          when {
-              expression { 
-                        BRANCH_NAME == name
-                        }
-                }        
-          steps {
-                echo "Upcoming Developer"
-                echo "${params}"
-                sh testm.sh      
+            steps {
+                echo "Hey HE!Y"
+                echo "${name}"     
             }
         }
     }
