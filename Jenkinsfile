@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'H!!ey Developer'
+                echo 'H!!ey MAster'
                 echo "${branchName}"     
             }
         }
