@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'H!!ey HEY'
-                echo "${name}"     
+                echo 'H!!ey Developer'
+                echo "${branchName}"     
             }
         }
     }
