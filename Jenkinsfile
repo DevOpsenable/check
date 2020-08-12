@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'H!!ey Developer'
-                echo "${name}"     
+                echo "${branchName}"     
             }
         }
     }
