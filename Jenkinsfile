@@ -1,12 +1,17 @@
 pipeline {
-agent any
-stages {
-  stage("Use alias command"){
-    steps { 
-        sh '''
-          alias foo="bar"
-          foo
-        '''
+    agent any
+    environment {
+           BRANCH_NAME = 'master'
+               }
+    parameters {
+              name: 'PARAM1'
     }
-  }
-}}
+    stages {
+        stage('Build') {
+            steps {
+                echo 'H!!ey HEY'
+                echo "${name}"     
+            }
+        }
+    }
+}
