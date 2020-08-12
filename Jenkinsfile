@@ -7,9 +7,9 @@ pipeline {
               name: 'PARAM1'
     }
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                echo "H!!ey HEY"
+                echo 'H!!ey HEY'
                 echo "${name}"     
             }
         }
